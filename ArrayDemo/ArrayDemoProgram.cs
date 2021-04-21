@@ -7,39 +7,62 @@ namespace ArrayDemo
     {
         static void Main(string[] args)
         {
+            //option 1:
+            //string[] booktitles; //declaration
+            //booktitles = new string[4]; //initialization
 
-            var booktitles = new List<string>() { "Brain Rules", "PragmaticProgrammer", 
-                "Harry Potter and the Half-Blood Prince", "The Alchemist" };
+            //option 2:
+            //string[] booktitles = new string[4];
 
-            //retrieving an element from an array
-            Console.WriteLine(booktitles[0]);
-            Console.WriteLine(booktitles[1]);
-            Console.WriteLine(booktitles[2]);
-            Console.WriteLine(booktitles[3]);
+            //option 3: (implicit data type)
+            //var booktitles = new string[4];
+
+            //booktitles[0] = "Brain Rules";
+            //booktitles[1] = "Pragmatic Programmer";
+            //booktitles[2] = "Harry Potter and the Half-blood Prince";
+            //booktitles[3] = "The Alchemist";
+
+            var booktitles = new[]
+                {"Brain Rules", "Pragmatic Programmer",
+                "Harry Potter and the Half-blood Prince",
+                "The Alchemist"};
+
+            booktitles.SetValue("Harry Potter", 2);
+            var indexOfPragmatic = Array.IndexOf(booktitles, "Pragmatic Programmer");
+
+            for (int i = 0; i < booktitles.Length; i++)
+            {
+                booktitles[i] = booktitles[i].ToUpper();
+            }
+
+            //foreach (var title in booktitles)
+            //{
+            //    Console.WriteLine($"The book title is {title}");
+            //}
 
 
-            //var books = new List<string>() { "HPs", "The Alchemist" };
-            var books = new List<string>();
-            ArrayDemoProgram first = new ArrayDemoProgram();
-
-            first.DisplayElements(books);
-            first.Test("hello");
-        }
-
-        public void DisplayElements(List<string> collections)
-        {
-            if (collections.Count > 0) {
-                foreach (var item in collections)
+            string[,] books = //string{[2,4]}
                 {
-                    Console.WriteLine("Item is " + item);
+                    {"Brain Rules",
+                     "Pragmatic Programmer",
+                     "Harry Potter and the Half-blood Prince",
+                     "The Alchemist"
+                    }, //first dimension
+                    {"John Medina",
+                     "Andy Hunt",
+                     "J.K. Rowling",
+                     "Paulo Coelho"
+                    } //second dimension
+                };
+
+            for (int titleIndex = 0; titleIndex < books.GetLength(0) - 1; titleIndex++)
+            {
+                for (int authorIndex = 0; authorIndex < books.GetLength(1); authorIndex++)
+                {
+                    Console.WriteLine($"{books[titleIndex, authorIndex]} " +
+                        $"by {books[titleIndex + 1, authorIndex]}");
                 }
             }
-        }
-
-        public void Test(string y, int x = 2)
-        {
-            Console.WriteLine(x);
-            Console.WriteLine(y);
         }
     }
 }
