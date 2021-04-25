@@ -6,7 +6,8 @@ namespace DataLayer
     public class SqlData
     {
         static string connectionString
-        = "Data Source =.; Initial Catalog = PUPPoints;User Id=sa;Password=indaleenq727!; Integrated Security = True;";
+        //= "Data Source =.; Initial Catalog = PUPPoints;User Id=sa;Password=indaleenq727!; Integrated Security = True;";
+        = "Server=tcp:137.116.161.191,1433;Database=PUPPoints;User Id=sa;Password=integbsit2!";
         static SqlConnection sqlConnection = new SqlConnection(connectionString);
 
         static public bool ValidateIfStudentExists(string studentNumber)

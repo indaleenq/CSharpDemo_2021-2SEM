@@ -69,7 +69,7 @@ namespace Implem1
             var pointsToUse = Convert.ToInt32(Console.ReadLine());
             var currentPoints = SqlData.GetPointsByStudent(studentNumber);
 
-            if (pointsToUse <= points)
+            if (pointsToUse <= currentPoints)
             {
                 SqlData.UpdateStudentPoints(studentNumber, (currentPoints - pointsToUse));
                 Console.WriteLine($"Successfully used {pointsToUse} points. ");
