@@ -7,3 +7,7 @@ ArrayListMethodDemo.sln
 obj
 .vs
 bin
+.cd
+Properties
+packages
+DataLayer

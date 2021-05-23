@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PointsDataLayer", "PointsDataLayer\PointsDataLayer.csproj", "{BCFB4882-F2A1-4B4E-910D-12FCFC9B9320}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PointsCommon", "PointsCommon\PointsCommon.csproj", "{502B0BDE-A79A-44CE-B81D-A09AFC5561AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PointsBusinessLogic", "PointsBusinessLogic\PointsBusinessLogic.csproj", "{D6243ED3-5A4D-4D68-90D3-028E1BA7607E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PointsStudentView", "PointsStudentView\PointsStudentView.csproj", "{B1DD6307-B714-4D66-B079-09A9497D7CD6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5B761CFC-F925-414D-ABEE-F0527B89E3A0} = {5B761CFC-F925-414D-ABEE-F0527B89E3A0}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PointsFacultyView", "PointsFacultyView\PointsFacultyView.csproj", "{F716643B-8FFA-4956-9B3B-CB492A96F519}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5B761CFC-F925-414D-ABEE-F0527B89E3A0} = {5B761CFC-F925-414D-ABEE-F0527B89E3A0}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PUPPointsWebService", "PUPPointsWebService\PUPPointsWebService.csproj", "{5B761CFC-F925-414D-ABEE-F0527B89E3A0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BCFB4882-F2A1-4B4E-910D-12FCFC9B9320}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCFB4882-F2A1-4B4E-910D-12FCFC9B9320}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCFB4882-F2A1-4B4E-910D-12FCFC9B9320}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCFB4882-F2A1-4B4E-910D-12FCFC9B9320}.Release|Any CPU.Build.0 = Release|Any CPU
+		{502B0BDE-A79A-44CE-B81D-A09AFC5561AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{502B0BDE-A79A-44CE-B81D-A09AFC5561AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{502B0BDE-A79A-44CE-B81D-A09AFC5561AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{502B0BDE-A79A-44CE-B81D-A09AFC5561AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6243ED3-5A4D-4D68-90D3-028E1BA7607E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6243ED3-5A4D-4D68-90D3-028E1BA7607E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6243ED3-5A4D-4D68-90D3-028E1BA7607E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6243ED3-5A4D-4D68-90D3-028E1BA7607E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1DD6307-B714-4D66-B079-09A9497D7CD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1DD6307-B714-4D66-B079-09A9497D7CD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1DD6307-B714-4D66-B079-09A9497D7CD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1DD6307-B714-4D66-B079-09A9497D7CD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F716643B-8FFA-4956-9B3B-CB492A96F519}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F716643B-8FFA-4956-9B3B-CB492A96F519}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F716643B-8FFA-4956-9B3B-CB492A96F519}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F716643B-8FFA-4956-9B3B-CB492A96F519}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B761CFC-F925-414D-ABEE-F0527B89E3A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B761CFC-F925-414D-ABEE-F0527B89E3A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B761CFC-F925-414D-ABEE-F0527B89E3A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B761CFC-F925-414D-ABEE-F0527B89E3A0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {032BC0DE-94C5-4913-A893-7BA70DA78235}
+	EndGlobalSection
+EndGlobal
